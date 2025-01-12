@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      body {
+      font-family: 'Arial', sans-serif;
+      direction: rtl;
+      text-align: right; 
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background-color: #f0f5f5; 
+      background-attachment: scroll;
+    }
+        .navbar {
+            background-color: #282d3d; 
+        }
+        .navbar-brand img {
+            height: 70px; /* Adjust the height of the logo as needed */
+        }
+    .main-content {
+      margin-top: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main-content h1 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    /* Container and Video Styling */
+    .container {
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the video covers the entire container */
+      border: none; /* Remove border for fullscreen effect */
+    }
+
+    /* Text Box Styling */
+    .text-box {
+      width: 100%;
+      max-width: 800px; /* Align with video width */
+      padding: 20px;
+      margin: 20px auto;
+      border: 2px solid #f6f6ef;
+      border-radius: 10px;
+      background-color: #1f1455;
+      color: aliceblue;
+      font-size: 18px; /* Adjusted font size for readability */
+      text-align: right;
+      line-height: 1.6; /* Line spacing for better readability */
+    }
+
+    p {
+      margin: 10px 0; /* Add spacing between paragraphs */
+    }
+    @media (max-width: 600px) {
+  
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  
+}
+
+@media (min-width: 1201px) {
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 200px; /* العناصر ستتوزع بشكل متساوي */
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="homepage.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="courses.html">الدورات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="feedback.html">التعليقات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="resources.html">الموارد</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="TEST.HTML">نموذج حفظ القراءن</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Calculations.html">اختبر نفسك !</a>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الحساب
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="creat.html">انشاء حساب</a></li>
+                            <li><a class="dropdown-item" href="index.html">تسجيل خروج</a></li>
+                            <li><a class="dropdown-item" href="account.html">المعلومات الشخصيه</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      <div class="main-content">
+        <h1>مرحبًا بك في موقعنا!</h1>
+        <p>استمتع بتصفح الموقع واكتشاف الدورات التعليمية المميزة!</p>
+        <p style="background-color: #1f1455; color: #ffffff;">عن أبي هريرة رَضِيَ اللَّهُ عَنهُ أن رَسُول اللَّهِ ﷺ قال: (من سلك طريقاً يلتمس فيه علماً سهل اللَّه له طريقاً إلى الجنة) رَوَاهُ مُسلِمٌ.</p>
+      </div>
+    
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="كلام جميل.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="كلام جميل 2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="كلام جميل 33.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+        <div class="text-box">
+          <p>هلاً بك</p>
+          <p>تسعى منصة اقرأ لتقديم تجربة جديدة لتعلم اهم موضوعات العلوم الشرعية، من خلال استخدام ابسط الأدوات التقنية و بقالب سهل وجذاب مناسب لمختلف الفئات العمرية</p>
+          <p>تقدم المنصة طريقة تفاعلية تنافسية لتعلم العلوم الشرعية بمختلف مجالاتها، لتجعل من طلب العلم تجربة ممتعة</p>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

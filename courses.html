@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات التعليمية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 0;
+            background-color: #f0f5f5; 
+        }
+        .navbar {
+            background-color: #282d3d; 
+        }
+        .navbar-brand img {
+            height: 70px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            margin: 95px auto;
+            width: 1100px;
+        }
+        .card img {
+            object-fit: cover;
+            height: 200px;
+        }
+        .card-body {
+            background-color: #282d3d; /* Dark grey background */
+            color: #f5f5f5; /* Light text color */
+        }
+        .card-body .btn {
+            background-color:#ffb540; /* Pink button */
+            color: white;
+            border: none;
+        }
+        .card-body .btn:hover {
+            background-color: #e89a1e; /* Darker pink button on hover */
+        }
+        .card-title {
+            color: #ffffff; /* White title */
+        }
+        .card-text {
+            color: #e1e1e1; /* Light grey description */
+        }
+        
+    @media (max-width: 600px) {
+  
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  
+}
+
+@media (min-width: 1201px) {
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 200px; /* العناصر ستتوزع بشكل متساوي */
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="homepage.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="courses.html">الدورات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="feedback.html">التعليقات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="resources.html">الموارد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="TEST.HTML"> نموذج حفظ القراءن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Calculations.html">اختبر نفسك !</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الحساب
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="creat.html">انشاء حساب</a></li>
+                            <li><a class="dropdown-item" href="index.html">تسجيل خروج</a></li>
+                            <li><a class="dropdown-item" href="about.html">المعلومات الشخصيه</a></li>                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="قرأن.webp" class="card-img-top" alt="طريقة التلاوة">
+                    <div class="card-body">
+                        <h5 class="card-title">طريقة التلاوة</h5>
+                        <p class="card-text">تعلم الطريقة الصحيحة لتلاوة القرآن الكريم مع قواعد التجويد.</p>
+                        <a href="course1.html" target="_blank" class="btn btn-primary">عرض الدورة</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="الصلاة.jpeg" class="card-img-top" alt="طريقة الصلاة">
+                    <div class="card-body">
+                        <h5 class="card-title">طريقة الصلاة</h5>
+                        <p class="card-text">دورة شاملة لتعلم أركان الصلاة وأدائها بالشكل الصحيح.</p>
+                        <a href="course2.html" target="_blank" class="btn btn-primary">عرض الدورة</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="وضوء 22.jpg" class="card-img-top" alt="طريقة الوضوء">
+                    <div class="card-body">
+                        <h5 class="card-title">طريقة الوضوء</h5>
+                        <p class="card-text">تعرف على خطوات الوضوء وفقًا للسنة النبوية بأسلوب بسيط وسهل.</p>
+                        <a href="course3.html" target="_blank" class="btn btn-primary">عرض الدورة</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="حج وعمره  22.jpg" class="card-img-top" alt="طريقة الحج والعمرة">
+                    <div class="card-body">
+                        <h5 class="card-title">طريقة الحج والعمرة</h5>
+                        <p class="card-text">تعلم المناسك خطوة بخطوة لتحضير نفسك لزيارة البيت الحرام.</p>
+                        <a href="course4.html" target="_blank" class="btn btn-primary">عرض الدورة</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="اسماء الله 33.jpg" class="card-img-top" alt="أسماء الله الحسنى">
+                    <div class="card-body">
+                        <h5 class="card-title">أسماء الله الحسنى</h5>
+                        <p class="card-text">اكتشف معاني أسماء الله الحسنى وكيفية تطبيقها في حياتك اليومية.</p>
+                        <a href="course5.html" target="_blank" class="btn btn-primary">عرض الدورة</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="دعاء.jpg" class="card-img-top" alt="طريقة الدعاء الصحيحة">
+                    <div class="card-body">
+                        <h5 class="card-title">طريقة الدعاء الصحيحة</h5>
+                        <p class="card-text">تعلم كيفية الدعاء بإخلاص وتأثير للحصول على الاستجابة.</p>
+                        <a href="course6.html" target="_blank" class="btn btn-primary">عرض الدورة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

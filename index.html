@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="mystyle.css">
+
+  </head>
+<body>
+    <div class="video">
+        <video autoplay muted loop>
+            <source src="WkFTCFfwjtw.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div class="content">
+        <form id="login" action="homepage.html" method="post">
+            <div class="form-group">
+                <h1>aqraa</h1>
+                <div>
+                    <input type="text" id="username" placeholder="user name or email" required> <br>
+                </div>
+                <div>
+                    <input type="password" id="password" class="pass-key" placeholder="password" required>
+                </div>
+                <a href="forget.html"> Forget password </a>
+                <button type="submit">login</button>
+                <p>don't have an account <a href="creat.html">create account</a></p>
+            </div>
+            <p id="error" style="color: red;"></p>
+        </form>
+    </div>
+
+    <script>
+      document.getElementById('login').addEventListener('submit', function(event) {
+          event.preventDefault(); // منع الإرسال الافتراضي للنموذج
+
+          const username = document.getElementById('username').value.trim();
+          const password = document.getElementById('password').value.trim();
+          const errorElement = document.getElementById('error');
+          errorElement.innerText = ''; // إعادة تعيين رسالة الخطأ
+
+          // استرجاع البيانات من localStorage
+          const storedEmail = localStorage.getItem('email');
+          const storedPassword = localStorage.getItem('password');
+
+          // التحقق من صحة بيانات تسجيل الدخول
+          if (username === storedEmail && password === storedPassword) {
+              // تسجيل الدخول ناجح
+              window.location.href = 'homepage.html'; // إعادة توجيه المستخدم إلى الصفحة الرئيسية
+          } else {
+              // تسجيل الدخول فشل
+              errorElement.innerText = 'اسم المستخدم أو كلمة المرور غير صحيحة';
+          }
+      });
+  </script>
+</body>
+</html>

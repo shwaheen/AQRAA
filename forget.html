@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forget.css">
+</head>
+<body>
+    <!-- اسم الكلاس -->
+    <div class="container">
+        <h2>forget my password</h2>
+        <form id="forget-password-form">
+            <!-- كلاس جديد للمكونات الداخل النمودج -->
+            <div class="form-group">
+                <label for="email">e-mail</e-mail>:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- كلاس اخر لعرض رسائل النجاح -->
+            <button type="submit">Send a password reset link</button>
+        </form>
+        <div class="success-message" id="success-message" style="display: none;"></div>
+    </div>
+</body>
+</html>

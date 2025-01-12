@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="external.css"> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .navbar {
+            background-color: #282d3d;
+            
+        }
+
+        .navbar-brand img {
+            height: 70px; /* Adjust the height of the logo as needed */
+        }
+
+        .navbar a {
+            text-decoration: none; /* Remove underline from menu links */
+        }
+
+        .navbar a:hover {
+            text-decoration: none; /* Ensure underline doesn't appear on hover for menu links */
+        }
+
+         
+    @media (max-width: 600px) {
+  
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  
+}
+
+@media (min-width: 1201px) {
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 200px; /* العناصر ستتوزع بشكل متساوي */
+}
+    </style>
+</head>
+
+<body>
+    <!-- New Menu Bar -->
+   
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="homepage.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="courses.html">الدورات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="feedback.html">التعليقات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="resources.html">الموارد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="TEST.HTML"> نموذج حفظ القراءن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Calculations.html">اختبر نفسك !</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الحساب
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="creat.html">انشاء حساب</a></li>
+                            <li><a class="dropdown-item" href="index.html">تسجيل خروج</a></li>
+                            <li><a class="dropdown-item" href="about.html">المعلومات الشخصيه</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="contact-info">
+            <h2>تواصل معنا</h2>
+            <p>إذا كانت لديك أي أسئلة أو تحتاج إلى مساعدة، يمكنك التواصل معنا عبر القنوات التالية:</p>
+            <ul>
+                <li>البريد الإلكتروني: <a href="mailto:support@example.com">support@example.com</a></li>
+                <li>الهاتف: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                <li>وسائل التواصل الاجتماعي:
+                    <a href="https://www.facebook.com/share/vndh1LaVWLPyZzQq/?mibextid=LQQJ4d">فيسبوك</a>,
+                    <a href="https://whatsapp.com/dl/">واتساب</a>,
+                    <a href="https://www.instagram.com/iqraa0141?igsh=MWZyamx2bTRyeWUxbQ==">إنستغرام</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="support-hours">
+            <h2>ساعات الدعم</h2>
+            <p>فريق الدعم الخاص بنا متاح خلال الأوقات التالية:</p>
+            <ul>
+                <li>من الاثنين إلى الجمعة: من 9 صباحًا إلى 5 مساءً</li>
+                <li>السبت: من 10 صباحًا إلى 4 مساءً</li>
+                <li>الأحد: مغلق</li>
+            </ul>
+        </section>
+
+        <section id="support-form">
+            <h2>إرسال طلب</h2>
+            <form action="#" method="post">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">إرسال الرسالة</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

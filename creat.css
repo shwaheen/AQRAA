@@ -1,0 +1,64 @@
+body {
+padding: 5%;
+margin: 0%;
+font-family: sans-serif;
+background: url(gg.jpg);
+background-size:cover;
+background-attachment: fixed;
+text-align: center;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+label {
+display: block;
+margin-bottom: 5px;
+color: #0d0d0d;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+text-align:left;
+width: 50%;
+padding: 20px;
+border: 10px solid #ccc;
+border-radius: 5px;
+}
+button {
+width: 50%;
+padding: 10px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-align:center;
+
+}
+button:hover {
+
+background-color: #45a049;
+}    
+
+@media (max-width: 600px) {
+  
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  
+}
+
+@media (min-width: 1201px) {
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 200px; /* العناصر ستتوزع بشكل متساوي */
+}

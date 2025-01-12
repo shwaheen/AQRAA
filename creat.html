@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="creat.css">
+</head>
+<body>
+    <form id="registration-form" action="homepage.html" method="post">
+        <div class="form-group">
+            <label for="first-name">First Name :</label>
+            <input type="text" placeholder="First-name" name="first-name" required>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" placeholder="Last-name" name="last-name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Password" name="password" required>
+        </div>
+        <button type="submit">Register</button>
+        <p id="error" style="color: red;"></p>
+    </form>
+
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // منع الإرسال الافتراضي للنموذج
+
+            const firstName = event.target['first-name'].value.trim();
+            const lastName = event.target['last-name'].value.trim();
+            const email = event.target['email'].value.trim();
+            const password = event.target['password'].value.trim();
+            const errorElement = document.getElementById('error');
+            errorElement.innerText = ''; // إعادة تعيين رسالة الخطأ
+
+            // التحقق من صحة البيانات
+            if (!firstName || !lastName || !email || !password) {
+                errorElement.innerText = 'Please fill out all fields';
+                return;
+            }
+
+            if (!validateEmail(email)) {
+                errorElement.innerText = 'Please enter a valid email';
+                return;
+            }
+
+            // تخزين البيانات في localStorage
+            localStorage.setItem('firstName', firstName);
+            localStorage.setItem('lastName', lastName);
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+
+            // إعادة توجيه المستخدم إلى صفحة تسجيل الدخول
+            window.location.href = 'index.html';
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+</body>
+</html>
