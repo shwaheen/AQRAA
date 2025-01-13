@@ -1,0 +1,358 @@
+        <!DOCTYPE html>
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           
+            <title>صفحة القرآن الكريم</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+           
+           <style>
+                body {
+
+                    direction: rtl;                
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden; /* منع التمرير */
+                }
+                .video {
+                    position: fixed; /* لجعل الفيديو ثابتًا في الخلفية */
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1; /* لجعل الفيديو في الخلفية */
+                }
+                .container {
+                    max-width: 600px;
+                    margin: auto;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    position: relative; /* لجعل المحتوى فوق الفيديو */
+                    z-index: 1; /* لجعل المحتوى فوق الفيديو */
+                }
+                h1, h2 {
+                    text-align: center;
+                    color: wheat;
+                }
+                .result {
+                    color: wheat;
+                    margin-top: 20px;
+                    font-size: 1.2em;
+                    text-align: center;
+                }
+                p {
+                    color: wheat;
+                    text-align: right; 
+                }
+                label {
+                    color: wheat;
+                    text-align: right;
+                }
+                .verse-name {
+                    color: white; /* اللون الافتراضي لاسم السورة */
+                    font-size: 1.5em; /* حجم الخط */
+                    text-align: center; /* محاذاة النص إلى الوسط */
+                    margin-top: 20px; /* هامش علوي */
+                }
+                
+                /* Dropdown Menu */
+                /*.dropdown {
+                    display: none;
+                    position: absolute;
+                    top: 90px;
+                    left: 10;
+                    background-color: #282d3d;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+               
+                .dropdown a {
+                    padding: 10px 20px;
+                    color: #fff;
+                    text-decoration: none;
+                    display: block;
+                }
+                .dropdown a:hover {
+                    background-color: #3d4252;
+                }*/
+                
+        .navbar {
+            background-color: #282d3d; 
+        }
+        .navbar-brand img {
+            height: 70px; /* Adjust the height of the logo as needed */
+        }
+        @media (max-width: 600px) {
+  
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  
+}
+
+@media (min-width: 1201px) {
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 200px; /* العناصر ستتوزع بشكل متساوي */
+}
+            </style>
+        </head>
+    <body>
+        
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="homepage.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="courses.html">الدورات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">اتصل بنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="feedback.html">التعليقات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="resources.html">الموارد</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="TEST.HTML">نموذج حفظ القراءن</a></li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Calculations.html">اختبر نفسك !</a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                الحساب
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="creat.html">انشاء حساب</a></li>
+                                <li><a class="dropdown-item" href="index.html">تسجيل خروج</a></li>
+                                <li><a class="dropdown-item" href="account.html">المعلومات الشخصيه</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="video">
+                    <video autoplay muted loop>
+                        <source src="فيديو خلفية إسلامية جاهزة لتصميم و مونتاج القرآن الكريم.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <div class="container"><br>
+                    <h1>القرآن الكريم</h1>
+                    <p>عدد الصفحات: 604</p>
+                    <p>عدد الآيات: 6236</p>
+                    <p>عدد السور: 114</p>
+                
+                    <h2>احسب نسبة الإنجاز في ختم القرآن</h2>
+                
+                    <input type="number" id="ayatCount" placeholder="عدد الآيات" />
+                    <label for="ayatCount">أدخل عدد الآيات التي وصلت لها :</label><br>
+                
+                    <input type="number" id="imageNumber" placeholder="رقم السورة" />
+                    <label for="imageNumber">أدخل رقم السور الحالية: </label><br>
+                
+                    <input type="number" id="savedImages" placeholder="عدد السور المحفوظة" />
+                    <label for="savedImages">أدخل عدد السور المحفوظة:</label><br>
+                
+                    <button onclick="calculateProgress()">احسب الإنجاز</button>
+                
+                    <div class="result" id="result"></div>
+                
+                    <form id="pageForm">
+                        <button type="submit">احصل على اسم السورة</button> 
+                        <input type="number" id="pageCount" name="pageCount" required>
+                        <label for="pageCount"> (من 1 إلى 604) أدخل عدد الصفحات:</label>
+                    </form>
+                
+                    <div class="verse-name" id="verseResult"></div>
+                </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+                
+                <script>
+                    function calculateProgress() {
+                        const totalAyat = 6236; // إجمالي عدد الآيات
+                        const totalImages = 114; // إجمالي عدد السور
+                        const userAyat = document.getElementById('ayatCount').value;
+                        const imageNumber = document.getElementById('imageNumber').value;
+                        const savedImages = document.getElementById('savedImages').value;
+                
+                        if (userAyat < 0 || userAyat > totalAyat) {
+                            alert("يرجى إدخال عدد صحيح من الآيات.");
+                            return;
+                        }
+                
+                        if (imageNumber < 1 || imageNumber > totalImages) {
+                            alert("يرجى إدخال رقم صحيح للسورة (من 1 إلى 114).");
+                            return;
+                        }
+                
+                        if (savedImages < 0 || savedImages > totalImages) {
+                            alert("يرجى إدخال عدد صحيح من السور المحفوظة.");
+                            return;
+                        }
+                
+                        const progress = (userAyat / totalAyat) * 100;
+                        const remainingImages = totalImages - savedImages;
+                
+                        document.getElementById('result').innerText = `لقد أنجزت ${progress.toFixed(2)}% من ختم القرآن. أنت في الصورة رقم ${imageNumber}، الآية رقم ${userAyat}. عدد الصور المتبقية: ${remainingImages}.`;
+                    }
+                
+                    document.getElementById('pageForm').addEventListener('submit', function(event) {
+                        event.preventDefault(); // منع إعادة تحميل الصفحة
+                        const pageCount = parseInt(document.getElementById('pageCount').value);
+                        
+                        // التحقق من صحة رقم الصفحة
+                        if (pageCount < 1 || pageCount > 604) {
+                            document.getElementById('verseResult').innerText = `(1--604) يرجى إدخال عدد صحيح بين: ${pageCount}`;
+                            return;
+                        }
+                        
+                        const verseName = getVerseName(pageCount); // دالة للحصول على اسم السورة
+                        document.getElementById('verseResult').innerText = `اسم السورة: ${verseName}`;
+                    });
+                
+                    function getVerseName(pageCount) {
+                        // تحديد السورة بناءً على رقم الصفحة
+                        if (pageCount === 1 || pageCount === 2) {
+                return "سورة الفاتحة";
+            } else if (pageCount >= 3 && pageCount <= 49) {
+                return "سورة البقرة";
+            } else if (pageCount >= 50 && pageCount <= 76) {
+                return "سورة آل عمران";
+            } else if (pageCount >= 77 && pageCount <= 105) {
+                return "سورة النساء";
+            } else if (pageCount >= 106 && pageCount <= 127) {
+                return "سورة المائدة";
+            } else if (pageCount >= 128 && pageCount <= 150) {
+                return "سورة الأنعام";
+            } else if (pageCount >= 151 && pageCount <= 176) {
+                return "سورة الأعراف";
+            } else if (pageCount >= 177 && pageCount <= 186) {
+                return "سورة الأنفال";
+            } else if (pageCount >= 187 && pageCount <= 207) {
+                return "سورة التوبة";
+            } else if (pageCount >= 208 && pageCount <= 220) {
+                return "سورة يونس";
+            } else if (pageCount >= 221 && pageCount <= 234) {
+                return "سورة هود";
+            } else if (pageCount >= 235 && pageCount <= 248) {
+                return "سورة يوسف";
+            } else if (pageCount >= 249 && pageCount <= 254) {
+                return "سورة الرعد";
+            } else if (pageCount >= 255 && pageCount <= 261) {
+                return "سورة إبراهيم";
+            } else if (pageCount >= 262 && pageCount <= 266) {
+                return "سورة الحجر";
+            } else if (pageCount >= 267 && pageCount <= 281) {
+                return "سورة النحل";
+            } else if (pageCount >= 282 && pageCount <= 292) {
+                return "سورة الإسراء";
+            } else if (pageCount >= 293 && pageCount <= 304) {
+                return "سورة الكهف";
+            } else if (pageCount >= 305 && pageCount <= 311) {
+                return "سورة مريم";
+            } else if (pageCount >= 312 && pageCount <= 321) {
+                return "سورة طه";
+            } else if (pageCount >= 322 && pageCount <= 331) {
+                return "سورة الأنبياء";
+            } else if (pageCount >= 332 && pageCount <= 341) {
+                return "سورة الحج";
+            } else if (pageCount >= 342 && pageCount <= 349) {
+                return "سورة المؤمنون";
+            } else if (pageCount >= 350 && pageCount <= 358) {
+                return "سورة النور";
+            } else if (pageCount >= 359 && pageCount <= 366) {
+                return "سورة الفرقان";
+            } else if (pageCount >= 367 && pageCount <= 376) {
+                return "سورة الشعراء";
+            } else if (pageCount >= 377 && pageCount <= 384) {
+                return "سورة القصص";
+            } else if (pageCount >= 385 && pageCount <= 395) {
+                return "سورة العنكبوت";
+            } else if (pageCount >= 396 && pageCount <= 403) {
+                return "سورة الروم";
+            } else if (pageCount >= 404 && pageCount <= 411) {
+                return "سورة لقمان";
+            } else if (pageCount >= 412 && pageCount <= 419) {
+                return "سورة السجدة";
+            } else if (pageCount >= 420 && pageCount <= 429) {
+                return "سورة الأحزاب";
+            } else if (pageCount >= 430 && pageCount <= 438) {
+                return "سورة سبأ";
+            } else if (pageCount >= 439 && pageCount <= 446) {
+                return "سورة فاطر";
+            } else if (pageCount >= 447 && pageCount <= 455) {
+                return "سورة يس";
+            } else if (pageCount >= 456 && pageCount <= 463) {
+                return "سورة الصافات";
+            } else if (pageCount >= 464 && pageCount <= 471) {
+                return "سورة ص";
+            } else if (pageCount >= 472 && pageCount <= 479) {
+                return "سورة الزمر";
+            } else if (pageCount >= 480 && pageCount <= 487) {
+                return "سورة غافر";
+            } else if (pageCount >= 488 && pageCount <= 495) {
+                return "سورة فصلت";
+            } else if (pageCount >= 496 && pageCount <= 503) {
+                return "سورة الشورى";
+            } else if (pageCount >= 504 && pageCount <= 511) {
+                return "سورة الزخرف";
+            } else if (pageCount >= 512 && pageCount <= 519) {
+                return "سورة الدخان";
+            } else if (pageCount >= 520 && pageCount <= 527) {
+                return "سورة الجاثية";
+            } else if (pageCount >= 528 && pageCount <= 535) {
+                return "سورة الأحقاف";
+            } else if (pageCount >= 536 && pageCount <= 543) {
+                return "سورة محمد";
+            } else if (pageCount >= 544 && pageCount <= 551) {
+                return "سورة الفتح";
+            } else if (pageCount >= 552 && pageCount <= 558) {
+                return "سورة الحجرات";
+            } else if (pageCount >= 559 && pageCount <= 566) {
+                return "سورة ق";
+            } else if (pageCount >= 567 && pageCount <= 573) {
+                return "سورة الذاريات";
+            } else if (pageCount >= 574 && pageCount <= 580) {
+                return "سورة الطور";
+            } else if (pageCount >= 581 && pageCount <= 588) {
+                return "سورة النجم";
+            } else if (pageCount >= 589 && pageCount <= 596) {
+                return "سورة القمر";
+            } else if (pageCount >= 597 && pageCount <= 604) {
+                return "سورة الرحمن";
+            } else {
+                return "لا توجد سورة لهذا العدد"; 
+            }
+        }
+    </script>
+</body>
+</html>

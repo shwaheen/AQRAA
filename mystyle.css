@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* لعدم ظهور شريط التمرير */
+}
+
+/* هذا العنصر الخلفية مع تغطيته لكامل الشاشة */
+.video {
+    position: absolute; /* لتحديد موضع عنصر */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* لأنها سالبة سنكون أدنى من العناصر الأخرى */
+    overflow: hidden; /* تجنب ظهور شريط التمرير */
+}
+
+/* عنصر الفيديو لملاء الشاشة وتنسيق العرض والارتفاع */
+video {
+    object-fit: cover; /* لملاء الشاشة */
+    width: 100%;
+    height: 100%;
+}
+
+/* النموذج ليكون في منتصف الشاشة عموديًا مع خلفية شفافة وزوايا مدورة وظل */
+form {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* لون خلفية شفاف */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+::placeholder {
+    color: #d6d6dc;
+}
+
+/* تنسيق النصوص */
+h1 {
+    color: #3008fc;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* تنسيق الإدخال */
+input[type="text"], input[type="password"] {
+    position: static;
+    outline: none; /* لعدم ظهور زوائد مثل مربع حول الكلام */
+    border: none; /* إزالة الحدود حول العنصر */
+    width: 250px;
+    height: 35px;
+    border-bottom: 2px solid #fdffff;
+    background: none;
+    padding: 5px;
+    color: #e2dfe6;
+}
+
+/* تنسيق زر تسجيل الدخول بشكل دائري */
+
+button {
+    margin-top: 20px; /* مسافة فوق الزر */
+    outline: none;
+    padding: 10px; /* حشوة الزر */
+    background-color: #0077FF; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 50%; /* جعل الزر دائري */
+    width: 45px; /* عرض الزر */
+    height: 45px; /* ارتفاع الزر */
+    font-size: 13px; /* حجم الخط */
+    cursor: pointer; /* تغيير المؤشر عند التمرير فوق الزر */
+}
+
+button:hover {
+    background: #fff; /* لون الخلفية عند التمرير */
+    color: #0077ff; /* لون النص عند التمرير */
+    text-align: center;
+}
+
+p {
+    left: 30px;
+    color: #FFF;
+}
+
+/* روابط */
+a {
+    transform: translate(-5%, -99%);
+    color: rgb(223, 9, 9);
+    margin: 10px;
+}
+
+a:hover {
+    color: #f8f7fc;
+}
+
+.time {
+    font-size: 28px;
+    color: white; /* يمكنك تغيير اللون حسب التصميم */
+    position: absolute; /* لتحديد موقع الوقت */
+    top: 20px; /* المسافة من الأعلى */
+    right: 20px; /* المسافة من اليمين */
+}
+
+@media (max-width: 600px) {
+  
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  
+}
+
+@media (min-width: 1201px) {
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 200px; /* العناصر ستتوزع بشكل متساوي */
+}

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;/* المسافة بين الجدول وجدود الصفحه*/
+    background-color: #f9f9f9;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;/*  تجعل الحدود المزدوجه تظهر كجد واحد ---collapse بلا حدوود */
+    margin-top: 0px;/*  يحدد المسافة العلوية للجدول*/ 
+
+}
+/* تنسيق جميع خلايا الجدول */
+th, td {
+    border: 1px solid #dddddd;/* سماكة =solid */
+    text-align: left;
+    padding: 8px;
+}
+/* راس الجدول */
+th {
+    background-color: #c112a1;
+    color: white;
+}
+
+tr {
+    background-color: #fefcfc;
+}
+h1 {
+    text-align: center;
+}
+/* تنسيق الروابط */
+a:link{
+    color: #4b0275;
+    text-decoration:underline;/*وضع خط تحت الرابط*/
+}
+a:hover{
+    color: rgb(255, 0, 4);/*عند وضع موشر فوق الرابط يتغير لونه*/
+}
+a:active{
+    color: #0b0a0b;/*عند النقر علية يتغير لونه*/
+}
+
+@media (max-width: 600px) {
+  
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  
+}
+
+@media (min-width: 1201px) {
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 200px; /* العناصر ستتوزع بشكل متساوي */
+}
